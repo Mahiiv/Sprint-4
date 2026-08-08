@@ -6,7 +6,6 @@ job description and a short resume summary — and get a ready-to-use cover lett
 in seconds.
 
 **Live Demo:https://sprint-4-kwlb.onrender.com/
-**Live:**:
 
 ## Features
 
