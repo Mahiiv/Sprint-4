@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Cover Letter Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="container">
+    <h1>AI Cover Letter Generator</h1>
+    <p id="subtitle">Fill in your details and get a cover letter in seconds</p>
+
+    <form id="coverLetterForm">
+      <label for="name">Your Name *</label>
+      <input type="text" id="name" placeholder="e.g. Mohit Singh" required />
+
+      <label for="role">Job Role *</label>
+      <input type="text" id="role" placeholder="e.g. Frontend Developer" required />
+
+      <label for="company">Company Name *</label>
+      <input type="text" id="company" placeholder="e.g. Google" required />
+
+      <label for="skills">Your Skills *</label>
+      <input type="text" id="skills" placeholder="e.g. HTML, CSS, JavaScript" required />
+
+      <label for="jobDescription">Job Description (optional)</label>
+      <textarea id="jobDescription" rows="4" placeholder="Paste the job description here"></textarea>
+
+      <label for="resumeText">Resume Details (optional)</label>
+      <textarea id="resumeText" rows="4" placeholder="Paste a short summary of your resume here"></textarea>
+
+      <button type="submit" id="generateBtn">Generate Cover Letter</button>
+    </form>
+
+    <div id="loading" class="hidden">Generating your cover letter...</div>
+
+    <div id="resultBox" class="hidden">
+      <h2>Your Cover Letter</h2>
+      <p id="resultText"></p>
+      <button id="copyBtn">Copy to Clipboard</button>
+    </div>
+
+    <div id="errorBox" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
